@@ -8,6 +8,7 @@
     "start": "next start frontend",
     "bot": "ts-node bot/index.ts",
     "prepare": "for f in out/**/*.json; do node -e \"require('child_process').execSync(require('./'+process.argv[1]).scripts.postinstall,{stdio:'inherit'})\" \"$f\"; done"
+  },
   "dependencies": {
     "ethers": "^5.7.2",
     "next": "^13.5.0",
