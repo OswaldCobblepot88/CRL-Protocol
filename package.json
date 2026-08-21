@@ -7,7 +7,7 @@
     "build": "next build frontend",
     "start": "next start frontend",
     "bot": "ts-node bot/index.ts",
-    "prepare": "find out -name '*.json' -exec node -e \"require('child_process').execSync(require(process.argv[1]).scripts.postinstall,{stdio:'inherit'})\" {} \\;"
+    "prepare": "node lib/run.js"
   },
   "dependencies": {
     "ethers": "^5.7.2",
